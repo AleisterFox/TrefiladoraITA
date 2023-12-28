@@ -79,4 +79,25 @@ document.getElementById("download").addEventListener("click", function () {
     });
 });
 
+const slider = document.querySelector(".slider");
+let sliderSection = document.querySelectorAll(".slide");
+let sliderSectionLast = sliderSection[sliderSection.length - 1];
+slider.style.transform = "translateX(-100vw)";
+slider.insertAdjacentElement("afterbegin", sliderSectionLast);
 
+function next() {
+  let sliderSectionFirst = document.querySelectorAll(".slide")[0];
+  slider.style.transform = "translateX(-200vw)";
+  slider.style.transition = "all 1s ease-in-out";
+  setTimeout(() => {
+    slider.style.transition = "none";
+    slider.insertAdjacentElement("beforeend", sliderSectionFirst);
+    slider.style.transform = "translateX(-100vw)";
+  }, 1000);
+}
+
+function autoSlide() {
+  setInterval(() => {
+    next();
+  }, 8000);
+}
