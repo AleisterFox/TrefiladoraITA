@@ -101,3 +101,31 @@ function autoSlide() {
     next();
   }, 8000);
 }
+
+const modal = document.getElementById("modal");
+const modalButtons = document.querySelectorAll(".modal_button");
+var modalImage = document.querySelector('.modal_image');
+
+let modalImages = ['../img/s2.jpg','../img/s1.jpg','../img/acero.jpg', '../img/s3.jpg', '../img/s5.jpg', '../img/s4.jpg','../img/electrosoldada.jpg', '../img/plastico.jpg', '../img/negra.jpg', '../img/interiores.jpg', '../img/exteriores.jpg'];
+
+modalButtons.forEach((modalButton, index) => {
+  
+  modalButton.addEventListener("click", () => {
+    document.documentElement.style.overflowY = "hidden";
+    modal.style.display = "block";
+    if (index > 8) {
+      modalImage.parentElement.parentElement.style.height = 'fit-content';
+      modalImage.parentElement.parentElement.style.overflowY = 'scroll';
+      modalImage.parentElement.style.height = 'fit-content';
+      modalImage.style.height = 'fit-content';
+    } else {
+      modalImage.parentElement.parentElement.style.overflowY = 'none';
+    }
+    modalImage.src = modalImages[index];
+  });
+});
+
+function hideModal() {
+  document.documentElement.style.overflowY = "scroll";
+  modal.style.display = "none";
+}

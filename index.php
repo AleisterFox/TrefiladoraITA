@@ -15,7 +15,7 @@
   <title>Trefiladora ITA</title>
 </head>
 
-<body onload = autoSlide()>
+<body>
   <header class="main">
     <nav>
       <figure>
@@ -120,7 +120,7 @@
                     <p><strong>medidas (plg) 1/4</strong></p>
                     <p><strong>medidas (mm) 6.35 mm</strong></p>
                   </div>
-                  <a href="" class="button round">
+                  <a class="button round modal_button">
                     <i class="fa-solid fa-image"></i>
                   </a>
                 </div>
@@ -141,7 +141,7 @@
                     <p><strong>medidas (plg) 1/4</strong></p>
                     <p><strong>medidas (mm) 6.35 mm</strong></p>
                   </div> -->
-                  <a href="" class="button round">
+                  <a class="button round modal_button">
                     <i class="fa-solid fa-image"></i>
                   </a>
                 </div>
@@ -160,7 +160,7 @@
                   <div class="measures">
                     <p><strong>A LA MEDIDA</strong></p>
                   </div>
-                  <a href="" class="button round">
+                  <a class="button round modal_button">
                     <i class="fa-solid fa-image"></i>
                   </a>
                 </div>
@@ -181,7 +181,7 @@
                     <p><strong>15 - 20</strong></p>
                     <p><strong>15 - 25</strong></p>
                   </div>
-                  <a href="" class="button round">
+                  <a class="button round modal_button">
                     <i class="fa-solid fa-image"></i>
                   </a>
                 </div>
@@ -204,7 +204,7 @@
                     <p><strong>3"</strong></p>
                     <p><strong>4"</strong></p>
                   </div>
-                  <a href="" class="button round">
+                  <a class="button round modal_button">
                     <i class="fa-solid fa-image"></i>
                   </a>
                 </div>
@@ -223,7 +223,7 @@
                   <div class="measures">
                     <p><strong>A LA MEDIDA</strong></p>
                   </div>
-                  <a href="" class="button round">
+                  <a class="button round modal_button">
                     <i class="fa-solid fa-image"></i>
                   </a>
                 </div>
@@ -244,7 +244,7 @@
                     <p><strong>6x6 10-10</strong></p>
                     <p><strong>6x6 66-66</strong></p>
                   </div>
-                  <a href="" class="button round">
+                  <a class="button round modal_button">
                     <i class="fa-solid fa-image"></i>
                   </a>
                 </div>
@@ -279,7 +279,7 @@
                     <p><strong>3/4"</strong></p>
                     <p><strong>1"</strong></p>
                   </div>
-                  <a href="" class="button round">
+                  <a class="button round modal_button">
                     <i class="fa-solid fa-image"></i>
                   </a>
                 </div>
@@ -303,7 +303,7 @@
                     <p><strong>1 1/4"</strong></p>
                     <p><strong>2"</strong></p>
                   </div>
-                  <a href="" class="button round">
+                  <a class="button round modal_button">
                     <i class="fa-solid fa-image"></i>
                   </a>
                 </div>
@@ -314,7 +314,7 @@
       </div>
       <div class="service">
         <figure>
-          <img src="img/acero.jpg" alt="">
+          <img src="img/puertas.jpg" alt="">
         </figure>
         <h4>Puertas.</h4>
         <a class="button more">ver</a>
@@ -340,7 +340,7 @@
                     <p><strong>Color blanco</strong></p>
                     <p><strong>Color naranja</strong></p>
                   </div>
-                  <a href="" class="button round">
+                  <a class="button round modal_button">
                     <i class="fa-solid fa-image"></i>
                   </a>
                 </div>
@@ -364,7 +364,7 @@
                     <p><strong>Color blanco</strong></p>
                     <p><strong>Color naranja</strong></p>
                   </div>
-                  <a href="" class="button round">
+                  <a class="button round modal_button">
                     <i class="fa-solid fa-image"></i>
                   </a>
                 </div>
@@ -375,6 +375,16 @@
       </div>
     </section>
   </main>
+
+  <div id="modal">
+    <div class="container">
+      <a class="button round close_modal" onclick="hideModal()">X</a>
+      <figure>
+        <img src="img/s2.jpg" alt="" class="modal_image"> <!-- Aqui cambiara el src de la imagen -->
+      </figure>
+    </div>
+  </div>
+
   <footer id="footer">
     <div class="top">
       <figure>
