@@ -113,13 +113,16 @@ modalButtons.forEach((modalButton, index) => {
   modalButton.addEventListener("click", () => {
     document.documentElement.style.overflowY = "hidden";
     modal.style.display = "block";
-    if (index > 8) {
+    if (index > 6) {
       modalImage.parentElement.parentElement.style.height = 'fit-content';
       modalImage.parentElement.parentElement.style.overflowY = 'scroll';
       modalImage.parentElement.style.height = 'fit-content';
       modalImage.style.height = 'fit-content';
     } else {
-      modalImage.parentElement.parentElement.style.overflowY = 'none';
+      modalImage.parentElement.parentElement.style.overflowY = 'hidden';
+      modalImage.parentElement.parentElement.style.height = '40rem';
+      modalImage.parentElement.style.height = '40rem';
+      modalImage.style.height = '40rem';
     }
     modalImage.src = modalImages[index];
   });
@@ -128,4 +131,16 @@ modalButtons.forEach((modalButton, index) => {
 function hideModal() {
   document.documentElement.style.overflowY = "scroll";
   modal.style.display = "none";
+}
+
+
+const bullets = document.querySelectorAll(".bullets > button");
+
+for (let i = 0; i < bullets.length; i++) {
+  bullets[i].addEventListener("click", function() {
+    console.log(i);
+    for (let j = 0; j < i; j++) {
+      next();
+    }
+  });
 }

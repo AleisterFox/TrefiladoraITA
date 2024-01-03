@@ -182,6 +182,7 @@ header nav .socials a:hover {
     width: 100%;
     height: 100vh;
     overflow: hidden;
+    position: relative;
 }
 
 .slider {
@@ -617,4 +618,12 @@ footer .bottom {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.bullets {
+    position: absolute; 
+    bottom: 0;  
+    z-index: 10000;
+    left: 50%;
+    transform: translateX(-50%);
 }

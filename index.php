@@ -93,6 +93,13 @@
         </div>
 
       </div>
+      <!-- <div class="bullets">
+        <button data-slide="0">1</button>
+        <button data-slide="1">2</button>
+        <button data-slide="2">3</button>
+        <button data-slide="3">4</button>
+        <button data-slide="4">5</button>
+      </div> -->
     </section>
     <section id="services">
       <div class="service">
