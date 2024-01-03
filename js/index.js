@@ -99,7 +99,7 @@ function next() {
 function autoSlide() {
   setInterval(() => {
     next();
-  }, 8000);
+  }, 4000);
 }
 
 const modal = document.getElementById("modal");

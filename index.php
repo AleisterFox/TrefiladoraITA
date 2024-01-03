@@ -15,7 +15,7 @@
   <title>Trefiladora ITA</title>
 </head>
 
-<body>
+<body onload="autoSlide()">
   <header class="main">
     <nav>
       <figure>
